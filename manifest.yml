@@ -1,6 +1,6 @@
 ---
 applications:
-- name: gaap-product-pages
+- name: document-config
   memory: 64M
   path: ./build
   buildpack: staticfile_buildpack
