@@ -24,6 +24,10 @@ steps:
   displayName: 'Update bundle'
 
 - script: |
+    npm install
+  displayName: 'Install npm packages'
+
+- script: |
     bundle exec middleman build
   displayName: 'Build the project using middleman'
 
