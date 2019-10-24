@@ -1,0 +1,51 @@
+---
+title: DSS Product Page
+---
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">About</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        <a class="govuk-breadcrumbs__link" href="#main-content">Product Pages</a>
+      </li>
+    </ol>
+  </div>
+</div>
+<main class="govuk-main-wrapper" id="main-content" role="main">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">DSS Product Page</h1>
+        <p class="govuk-body">Creating a product page is a great way to inform your users about what your product or service is all about. It should clearly inform your users why you built the product or service and provide a way to help your users to discover the content relevant to their needs.</p>
+        <p class="govuk-body">To provide a consistent experience we have reused the product page provided by GDS and created a template repository from which you can quickly get started. We have added some custom styling to ensure that it is branded in line with our standards.</p>
+        <img src="/images/product-page-screenshot.png" class="image dss-image"/>
+  
+        <h2 class="govuk-heading-m">Creating a new Product Page</h2>
+        <h3 class="govuk-heading-s">1. Creating a new repository</h3>
+        <p class="govuk-body">To make this as easy as possible we have created a template repository from which you can quickly create new repositories which include all the files you need to get started.
+        </p>
+        <img src="/images/New-Product-Page.png" class="image dss-image"/>
+        <h3 class="govuk-heading-s">2. Setting up your environment</h3>
+        <p class="govuk-body">After you have created your remote repository you should clone the repository to your local development machine as normal.</p>
+        <p class="govuk-body">Run <code>git clone https://github.com/dof-dss/REPO-NAME</code>.</p>
+        <p class="govuk-body">This will copy your remote repository to your machine. You can make changes to the content on your local machine following whatever branching strategy you have as a team or work directly on master. The product page template includes a <b>README.md</b> file which includes information on running the product page locally and setting up your development environment, you shoudl review this for guidance.</p>
+        <h3 class="govuk-heading-s">3. Hosting your Product Page</h3>
+        <p class="govuk-body">The quickest and easiest way to host your product page is by pushing it to the DoF DSS Gov.uk PaaS organisation. The template includes a <b>manifest.yml</b> file which includes the basic settings you would need to push the product page to Gov.uk PaaS using the Cloud Foundry CLI. For more guidance on pushing apps to Gov.uk PaaS see <a href="https://docs.cloud.service.gov.uk/deploying_apps.html#deploying-public-apps">here</a></p>
+        <h3 class="govuk-heading-s">4. Setting up a deployment Pipeline</h3>
+        <p class="govuk-body">The product page template already comes with an <b>AzurePipelines.yml</b> file which defines the steps required to build the product page on Azure. If you want to set up a new CI/CD pipeline tartgeting a space within the DoF DSS Gov.uk org then please contact <a href="mailto:ea-team@ea.finance-ni.gov.uk">ea-team@ea.finance-ni.gov.uk</a> and specify the name of the repository you want the pipeline to target and we will configure the pipeline for you.</p>
+
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <aside class="related-items">
+          <h2 class="related-items__title">Related content</h2>
+          <ul class="related-items__list">
+            <li><a class="govuk-link" href="https://github.com/dof-dss/product-page-template">Product Page template repo</a></li>
+            <li><a class="govuk-link" href="https://dss-product-pages.london.cloudapps.digital/">Hosted Example</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+</main>
