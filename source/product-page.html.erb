@@ -18,7 +18,7 @@ title: DSS Product Page
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-l">DSS Product Page</h1>
-        <p class="govuk-body">Creating a product page is a great way to inform your users about what your product or service is all about. It should clearly inform your users why you built the product or service and provide a way to help your users to discover the content relevant to their needs.</p>
+        <p class="govuk-body">Creating a product page is a great way to inform your users about what your product or service is all about. It should clearly inform your users why you built the product or service and help your users discover the content relevant to their needs.</p>
         <p class="govuk-body">To provide a consistent experience we have reused the product page provided by GDS and created a template repository from which you can quickly get started. We have added some custom styling to ensure that it is branded in line with our standards.</p>
         <img src="/images/product-page-screenshot.png" class="image dss-image"/>
   
@@ -30,9 +30,9 @@ title: DSS Product Page
         <h3 class="govuk-heading-s">2. Setting up your environment</h3>
         <p class="govuk-body">After you have created your remote repository you should clone the repository to your local development machine as normal.</p>
         <p class="govuk-body">Run <code>git clone https://github.com/dof-dss/REPO-NAME</code>.</p>
-        <p class="govuk-body">This will copy your remote repository to your machine. You can make changes to the content on your local machine following whatever branching strategy you have as a team or work directly on master. The product page template includes a <b>README.md</b> file which includes information on running the product page locally and setting up your development environment, you shoudl review this for guidance.</p>
+        <p class="govuk-body">This will copy your remote repository to your machine. You can make changes to the content on your local machine, following whatever branching strategy you have as a team, or work directly on master. The product page template has a <b>README.md</b> file which includes information on running the product page locally and setting up your development environment, you should review this for guidance.</p>
         <h3 class="govuk-heading-s">3. Hosting your Product Page</h3>
-        <p class="govuk-body">The quickest and easiest way to host your product page is by pushing it to the DoF DSS Gov.uk PaaS organisation. The template includes a <b>manifest.yml</b> file which includes the basic settings you would need to push the product page to Gov.uk PaaS using the Cloud Foundry CLI. For more guidance on pushing apps to Gov.uk PaaS see <a href="https://docs.cloud.service.gov.uk/deploying_apps.html#deploying-public-apps">here</a></p>
+        <p class="govuk-body">The quickest and easiest way to host your product page is by pushing it to the DoF DSS Gov.uk PaaS organisation. The template includes a <b>manifest.yml</b> file which includes the basic settings you need to push the product page to Gov.uk PaaS using the Cloud Foundry CLI, be careful to change the product name to ensure your product page does not conflict with other pages. For more guidance on pushing apps to Gov.uk PaaS see <a href="https://docs.cloud.service.gov.uk/deploying_apps.html#deploying-public-apps">here</a></p>
         <h3 class="govuk-heading-s">4. Setting up a deployment Pipeline</h3>
         <p class="govuk-body">The product page template already comes with an <b>AzurePipelines.yml</b> file which defines the steps required to build the product page on Azure. If you want to set up a new CI/CD pipeline tartgeting a space within the DoF DSS Gov.uk org then please contact <a href="mailto:ea-team@ea.finance-ni.gov.uk">ea-team@ea.finance-ni.gov.uk</a> and specify the name of the repository you want the pipeline to target and we will configure the pipeline for you.</p>
 
